@@ -1,0 +1,160 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #4895ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid rgb(233, 220, 220);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.pricing-plan:last-child{
+    border-bottom: none;
+}
+
+.pricing-button {
+    border: 1px solid rgb(43, 93, 187);
+    border-radius: 10px;
+    padding: 15px 40px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: 200ms;
+}
+
+.pricing-button:hover , .pricing-button:focus{
+    background-color: rgb(237, 237, 255);
+}
+
+.pricing-button.is-featured{
+    background-color: #8484ff;
+    color: white;
+    border-color: #8484ff;
+    transition: 200ms;
+}
+
+.pricing-button.is-featured:hover,.pricing-button.is-featured:focus{
+    background-color: #6b6bd0;
+}
+
+.pricing-header{
+    font-size: medium;
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.pricing-features-item{
+    color: #1c70cf;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-top: 1px solid rgb(233, 220, 220);
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.pricing-features-item:last-child{
+    border-bottom: 1px solid rgb(233, 220, 220);
+}
+
+.pricing-price{
+    font-size: 30px;
+    font-weight: bolder;
+    color: blue;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (min-width : 900px){
+    .panel{
+        flex-direction: row;
+    }
+    .pricing-plan{
+        border-bottom: none;
+        border-right: 1px solid rgb(233, 220, 220);
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child{
+        border-right: none;
+        
+    }
+}
